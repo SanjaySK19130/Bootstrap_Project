@@ -342,27 +342,31 @@
 .sc1 h1 {
     margin: 0 0 24px;
 }
-.imgcont{
+
+.imgcont {
     padding: 32px;
     display: flex;
     justify-content: center;
     align-items: center;
 }
+
 #cardimg {
     max-height: 225px;
     display: flex;
     justify-content: center;
     align-items: center;
     object-fit: contain;
-    background-color:#f0f4f8;
+    background-color: #f0f4f8;
     padding: 20px 20px;
     border-bottom: 1px solid rgb(223, 221, 221);
 }
-#cardimg img{
+
+#cardimg img {
     max-width: 240.15px;
     max-height: 159.99px;
 }
-#cardb1{
+
+#cardb1 {
     color: #0c5af7;
     background-color: rgba(12, 90, 247, 0.1);
     margin-bottom: 16px;
@@ -374,42 +378,114 @@
     max-width: 111.43px;
     gap: 6px;
     font-size: 12px;
-    border-bottom: 1px solid ;
+    border-bottom: 1px solid;
     font-weight: 500;
 }
-.card-body h3{
+
+.card-body h3 {
     font-size: 20px;
     font-weight: 600;
     margin-bottom: 8px;
-    letter-spacing:-0.2px;
+    letter-spacing: -0.2px;
 }
-.card-body p{
+
+.card-body p {
     font-size: 14px;
     line-height: 1.7;
     color: grey;
     margin-bottom: 24px;
 }
-#tick{
+
+#tick {
     color: #0c5af7;
 }
-.card-body{
+
+.card-body {
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
 }
-.feature-list{
+
+.feature-list {
     padding: 0;
     font-size: 14px;
     font-weight: 400;
     color: #2f3749;
 }
-.feature-list span{
+
+.feature-list span {
     padding-left: 10px;
 }
-.feature-list ul{
+
+.feature-list ul {
     padding-top: 30px;
-    
+
 }
-.feature-list li{
+
+.feature-list li {
     margin-bottom: 8px;
+}
+
+.faq1 {
+    padding: 22px 30px;
+    position: sticky;
+    top: 90px;
+    align-self: flex-start;
+}
+
+@media (max-width:991px) {
+    .faq1 {
+        width: 100% !important;
+        max-width: 90% !important;
+        flex: 0 0 85% !important;
+        margin: 0 30px;
+        position: static;
+    }
+}
+
+.faq1 .btn2 {
+    white-space: nowrap;
+}
+
+.faq2 .accordion-item {
+    border: none;
+    background: #f5f6f7;
+    margin-bottom: 25px;
+}
+
+.faq2 .accordion-button {
+    background: #f0f4f8;
+    font-size: 16.8px;
+    font-weight: 600;
+    padding: 25px 30px;
+    box-shadow: none;
+}
+
+.faq2 .accordion-button:not(.collapsed) {
+    background: #f0f4f8;
+    color: #0d6efd;
+    box-shadow: none;
+}
+
+.faq2 .accordion-button:focus {
+    box-shadow: none;
+    border: none;
+}
+
+.faq2 .accordion-body {
+    background: #f0f4f8;
+    color: #6c757d;
+    font-size: 15.2px;
+    font-family: Arial, Helvetica, sans-serif;
+    line-height: 1.8;
+    padding: 0px 30px 30px;
+}
+
+.faq2 .accordion-button::after {
+    background-size: 20px;
+}
+
+.faq {
+    position: relative;
+    padding: 60px 0;
 }
