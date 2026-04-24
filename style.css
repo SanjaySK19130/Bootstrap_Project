@@ -350,6 +350,14 @@
     align-items: center;
 }
 
+.card {
+    transition: 0.3s;
+
+    &:hover {
+        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    }
+}
+
 #cardimg {
     max-height: 225px;
     display: flex;
@@ -488,4 +496,61 @@
 .faq {
     position: relative;
     padding: 60px 0;
+}
+
+.con-section {
+    border: 1px solid #2f374914;
+    height: 100%;
+    padding: 48px 24px;
+    transition: 1s;
+
+    &:hover {
+        border: 1px solid black;
+    }
+}
+
+#conbtn{
+    color: #0c5af7;
+    border: 1px solid #0c5af7;
+    padding: 14px 48px;
+    border-radius: 0;
+    font-size: 14px;
+    font-weight: 600;
+    transition: 0.3s;
+    white-space: nowrap;
+    &:hover {
+        color: white;
+        background-color: #0c5af7;
+    }
+}
+
+input.form-control{
+    padding: 14px 16px;
+    border-radius: 0;
+    &:focus {
+        border: #0c5af7 1px solid;
+        box-shadow: none;
+    }
+}
+
+textarea.form-control{
+    padding: 14px 16px;
+    border-radius: 0;
+    &:focus {
+        border: #0c5af7 1px solid;
+        box-shadow: none;
+    }
+}
+
+input.form-control::placeholder,
+textarea.form-control::placeholder{
+  color:grey;
+  font-size:15px;
+  font-weight:400;
+  opacity:0.5;
+}
+.line3{
+  height:1px;
+  background:#dee2e6;
+  margin: 50px auto;
 }
