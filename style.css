@@ -509,7 +509,7 @@
     }
 }
 
-#conbtn{
+#conbtn {
     color: #0c5af7;
     border: 1px solid #0c5af7;
     padding: 14px 48px;
@@ -518,24 +518,27 @@
     font-weight: 600;
     transition: 0.3s;
     white-space: nowrap;
+
     &:hover {
         color: white;
         background-color: #0c5af7;
     }
 }
 
-input.form-control{
+input.form-control {
     padding: 14px 16px;
     border-radius: 0;
+
     &:focus {
         border: #0c5af7 1px solid;
         box-shadow: none;
     }
 }
 
-textarea.form-control{
+textarea.form-control {
     padding: 14px 16px;
     border-radius: 0;
+
     &:focus {
         border: #0c5af7 1px solid;
         box-shadow: none;
@@ -543,14 +546,67 @@ textarea.form-control{
 }
 
 input.form-control::placeholder,
-textarea.form-control::placeholder{
-  color:grey;
-  font-size:15px;
-  font-weight:400;
-  opacity:0.5;
+textarea.form-control::placeholder {
+    color: grey;
+    font-size: 15px;
+    font-weight: 400;
+    opacity: 0.5;
 }
-.line3{
-  height:1px;
-  background:#dee2e6;
-  margin: 50px auto;
+
+.line3 {
+    height: 1px;
+    background: #dee2e6;
+    margin: 50px auto;
+}
+
+.icons {
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    gap: 10px;
+}
+
+.icons i {
+    width: 40px;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid #2f3749;
+    border-radius: 50%;
+    font-size: 16px;
+    color: #2f3749;
+    transition: 0.3s;
+}
+
+footer a{
+    cursor: pointer;
+    color:grey;
+    transition: 0.3s;
+    &:hover{
+        color: #0c5af7;
+    }
+}
+.form{
+    display: flex;
+    margin: 20px 0;
+}
+.email{
+    padding: 8px 12px;
+    border:1px solid #2f3749;
+}
+.email:focus{
+  border:1px solid #0c5af7;
+  outline:none;
+  transition: 0.3s;
+}
+.subbtn{
+    background-color: #0c5af7;
+    color: white;
+    border: 0;
+    padding: 8px 12px;
+    transition: 0.3s;
+    &:hover{
+        opacity: 0.7;
+    }
 }
